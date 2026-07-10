@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio | Nadear</title>
+<title>ประวัติส่วนตัว | Nadear</title>
 
 <style>
 
@@ -49,34 +49,26 @@ body{
     }
 }
 
-/* การ์ด */
+/* กล่อง */
 
 .card{
-    width:600px;
+    width:700px;
     max-width:90%;
     background:rgba(255,255,255,.35);
     backdrop-filter:blur(18px);
     padding:40px;
     border-radius:30px;
-    text-align:center;
     box-shadow:0 10px 35px rgba(255,182,193,.5);
 }
 
-/* รูป */
-
 .profile{
-    width:180px;
-    height:180px;
+    width:170px;
+    height:170px;
     margin:auto;
     border-radius:50%;
     overflow:hidden;
     border:6px solid white;
     box-shadow:0 0 25px #ff8fc7;
-    transition:.4s;
-}
-
-.profile:hover{
-    transform:scale(1.08);
 }
 
 .profile img{
@@ -86,62 +78,46 @@ body{
 }
 
 h1{
+    text-align:center;
+    color:#ff4f8b;
+    margin:20px 0;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
     margin-top:20px;
-    color:#ff4f8b;
-    font-size:42px;
 }
 
-.jp{
-    margin:15px 0;
-    font-size:24px;
-    color:#b84d8a;
+td{
+    padding:15px;
+    font-size:18px;
+    border-bottom:1px solid rgba(255,255,255,.5);
+}
+
+td:first-child{
+    width:35%;
+    color:#ff4f8b;
     font-weight:bold;
 }
 
-.info{
-    line-height:2;
-    font-size:19px;
-    margin-top:15px;
-}
-
-/* เมนู */
-
-.menu{
+.button{
+    text-align:center;
     margin-top:35px;
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:18px;
 }
 
-.menu a{
+.button a{
     text-decoration:none;
-    background:rgba(255,255,255,.55);
-    backdrop-filter:blur(10px);
-    color:#ff4f8b;
-    padding:20px;
-    border-radius:18px;
-    font-weight:bold;
-    transition:.35s;
-    box-shadow:0 8px 20px rgba(255,182,193,.35);
-}
-
-.menu a span{
-    display:block;
-    font-size:35px;
-    margin-bottom:8px;
-}
-
-.menu a:hover{
-    transform:translateY(-8px) scale(1.05);
-    background:linear-gradient(135deg,#ff8fc7,#ff5ea8);
+    background:linear-gradient(45deg,#ff8fc7,#ff5ea8);
     color:white;
-    box-shadow:0 12px 30px rgba(255,94,168,.45);
+    padding:15px 35px;
+    border-radius:40px;
+    transition:.3s;
 }
 
-footer{
-    margin-top:30px;
-    color:#777;
-    font-size:15px;
+.button a:hover{
+    transform:scale(1.05);
+    display:inline-block;
 }
 
 </style>
@@ -150,58 +126,77 @@ footer{
 
 <body>
 
-<div class="sakura" style="left:8%;animation-duration:8s;">🌸</div>
-<div class="sakura" style="left:25%;animation-duration:10s;">🌸</div>
-<div class="sakura" style="left:40%;animation-duration:7s;">🌸</div>
-<div class="sakura" style="left:65%;animation-duration:11s;">🌸</div>
-<div class="sakura" style="left:85%;animation-duration:9s;">🌸</div>
+<div class="sakura" style="left:10%;animation-duration:8s;">🌸</div>
+<div class="sakura" style="left:30%;animation-duration:10s;">🌸</div>
+<div class="sakura" style="left:55%;animation-duration:7s;">🌸</div>
+<div class="sakura" style="left:80%;animation-duration:9s;">🌸</div>
 
 <div class="card">
 
 <div class="profile">
-<img src="images/IMG_0831.JPG" alt="รูปโปรไฟล์">
+<img src="images/IMG_0828.JPG" alt="รูปโปรไฟล์">
 </div>
 
-<h1>Portfolio</h1>
+<h1>👤 ประวัติส่วนตัว</h1>
 
-<div class="jp">
-🌸 (นาเดียร์) 🌸
+<table>
+
+<tr>
+<td>ชื่อ-สกุล</td>
+<td>นางสาววณิชญา วงศ์วิริยชาติ</td>
+</tr>
+
+<tr>
+<td>ชื่อเล่น</td>
+<td>นาเดียร์</td>
+</tr>
+
+<tr>
+<td>วันเกิด</td>
+<td>23 ธันวาคม 2551</td>
+</tr>
+
+<tr>
+<td>อายุ</td>
+<td>17 ปี</td>
+</tr>
+
+<tr>
+<td>ศาสนา</td>
+<td>คริสต์</td>
+</tr>
+
+<tr>
+<td>สัญชาติ</td>
+<td>ไทย</td>
+</tr>
+
+<tr>
+<td>งานอดิเรก</td>
+<td>ฟังเพลง • ดูซีรีส์ • ถ่ายรูป</td>
+</tr>
+
+<tr>
+<td>ความสามารถพิเศษ</td>
+<td>มีทักษะความเป็นผู้นำ
+ทำงานเป็นทีม
+ตัดต่อคริปวีดีโอ
+ถ่ายคริปวีดีโอ
+อินฟลู
+พิธิกร
+มีความคิดสร้างสรรค์</td>
+</tr>
+
+<tr>
+<td>คติประจำใจ</td>
+<td>"ความพยายามไม่เคยทรยศคนที่ตั้งใจ"</td>
+</tr>
+
+</table>
+
+<div class="button">
+<a href="education.html">🎓 หน้าถัดไป : ประวัติการศึกษา ➜</a>
 </div>
-
-<div class="info">
-<b>นางสาววณิชญา วงศ์วิริยชาติ</b><br><br>
-
-🎓 โรงเรียนพานทอง<br> 
-    แผนการเรียนอังกฤษ-จีน <br>
-</div>
-
-<div class="menu">
-
-<a href="index.html">
-<span>👤</span>
-ประวัติส่วนตัว
-</a>
-
-<a href="education.html">
-<span>🎓</span>
-ประวัติการศึกษา
-</a>
-
-<a href="Award.html">
-<span>🖼️</span>
-ผลงาน
-</a>
-
-<a href="contact.html">
-<span>📞</span>
-ติดต่อ
-</a>
-
-</div>
-
-<footer>
-🌸 Welcome to My Portfolio 🌸
-</footer>
 
 </div>
 
