@@ -167,15 +167,31 @@ transform:scale(1.08);
 
 <body>
 
-<nav>
+.menu{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
 
-<a href="index.html">🏠 หน้าหลัก</a>
-<a href="personal.html">👤 ประวัติส่วนตัว</a>
-<a href="education.html">🎓 ประวัติการศึกษา</a>
-<a href="portfolio.html">🖼️ ผลงาน</a>
-<a href="contact.html">📞 ติดต่อ</a>
+.menu a{
+    text-decoration:none;
+    background:rgba(255,255,255,.45);
+    backdrop-filter:blur(10px);
+    color:#ff4f8b;
+    padding:18px;
+    border-radius:18px;
+    font-weight:bold;
+    transition:.35s;
+    box-shadow:0 5px 15px rgba(255,182,193,.4);
+}
 
-</nav>
+.menu a:hover{
+    background:#ff7eb6;
+    color:white;
+    transform:translateY(-6px) scale(1.05);
+    box-shadow:0 10px 25px rgba(255,94,168,.5);
+}
 
 <div class="sakura" style="left:8%;animation-duration:8s;">🌸</div>
 <div class="sakura" style="left:25%;animation-duration:10s;">🌸</div>
@@ -207,12 +223,26 @@ transform:scale(1.08);
 
 
 
-</div>
+<div class="menu">
 
-<a href="personal.html" class="btn">
+<a href="personal.html">
+👤<br>
+ประวัติส่วนตัว
+</a>
 
-เข้าสู่ Portfolio →
+<a href="education.html">
+🎓<br>
+ประวัติการศึกษา
+</a>
 
+<a href="portfolio.html">
+🖼️<br>
+ผลงาน
+</a>
+
+<a href="contact.html">
+📞<br>
+ติดต่อ
 </a>
 
 </div>
