@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio | วณิชญา วงศ์วิริยชาติ</title>
+<title>ประวัติส่วนตัว | Nadear</title>
 
 <style>
 
@@ -11,82 +11,64 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Tahoma',sans-serif;
+    font-family:"Sarabun",sans-serif;
 }
 
 body{
-    height:100vh;
+    min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    background:linear-gradient(-45deg,#ffb6e6,#ffcce6,#d9b3ff,#b3d9ff);
+    background:linear-gradient(-45deg,#ffe4ec,#fff6fb,#e8f5ff,#ffeef5);
     background-size:400% 400%;
-    animation:bg 12s ease infinite;
+    animation:bg 15s ease infinite;
     overflow:hidden;
 }
 
-/* พื้นหลังเคลื่อนไหว */
 @keyframes bg{
     0%{background-position:0% 50%;}
     50%{background-position:100% 50%;}
     100%{background-position:0% 50%;}
 }
 
-/* หัวใจลอย */
-body::before,
-body::after{
-    content:"💖";
+/* ซากุระ */
+
+.sakura{
     position:absolute;
-    font-size:40px;
-    animation:float 8s linear infinite;
-    opacity:0.5;
+    top:-50px;
+    font-size:22px;
+    animation:fall linear infinite;
 }
 
-body::after{
-    left:80%;
-    animation-delay:3s;
-}
-
-@keyframes float{
+@keyframes fall{
     from{
-        transform:translateY(100vh) rotate(0deg);
+        transform:translateY(-50px) rotate(0deg);
     }
     to{
-        transform:translateY(-150px) rotate(360deg);
+        transform:translateY(110vh) translateX(120px) rotate(360deg);
     }
 }
+
+/* กล่อง */
 
 .card{
-    width:420px;
-    background:rgba(255,255,255,.2);
-    backdrop-filter:blur(15px);
-    border-radius:25px;
-    padding:35px;
-    text-align:center;
-    box-shadow:0 0 30px rgba(255,255,255,.5);
-    animation:up 1.2s;
-}
-
-@keyframes up{
-    from{
-        opacity:0;
-        transform:translateY(60px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
+    width:700px;
+    max-width:90%;
+    background:rgba(255,255,255,.35);
+    backdrop-filter:blur(18px);
+    padding:40px;
+    border-radius:30px;
+    box-shadow:0 10px 35px rgba(255,182,193,.5);
 }
 
 .profile{
-    width:150px;
-    height:150px;
-    border-radius:50%;
+    width:170px;
+    height:170px;
     margin:auto;
-    background:white;
-    border:5px solid #ff66cc;
+    border-radius:50%;
     overflow:hidden;
-    box-shadow:0 0 25px #ff66cc;
+    border:6px solid white;
+    box-shadow:0 0 25px #ff8fc7;
 }
 
 .profile img{
@@ -96,90 +78,119 @@ body::after{
 }
 
 h1{
-    color:#cc0066;
-    margin-top:20px;
-    font-size:34px;
+    text-align:center;
+    color:#ff4f8b;
+    margin:20px 0;
 }
 
-.nickname{
-    color:#990099;
-    font-size:22px;
-    margin-bottom:15px;
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
 }
 
-.info{
-    text-align:left;
-    margin-top:20px;
+td{
+    padding:15px;
     font-size:18px;
-    color:#333;
-    line-height:2;
+    border-bottom:1px solid rgba(255,255,255,.5);
 }
 
-.info span{
-    color:#d6006f;
+td:first-child{
+    width:35%;
+    color:#ff4f8b;
     font-weight:bold;
 }
 
-.btn{
-    display:inline-block;
-    margin-top:30px;
-    padding:15px 35px;
+.button{
+    text-align:center;
+    margin-top:35px;
+}
+
+.button a{
     text-decoration:none;
+    background:linear-gradient(45deg,#ff8fc7,#ff5ea8);
     color:white;
-    background:linear-gradient(45deg,#ff1493,#b300ff);
+    padding:15px 35px;
     border-radius:40px;
-    font-size:18px;
-    transition:.4s;
-    box-shadow:0 0 20px #ff66cc;
+    transition:.3s;
 }
 
-.btn:hover{
-    transform:scale(1.1);
-    box-shadow:0 0 40px #ff1493;
-}
-
-footer{
-    margin-top:25px;
-    color:#555;
-    font-size:14px;
+.button a:hover{
+    transform:scale(1.05);
+    display:inline-block;
 }
 
 </style>
+
 </head>
 
 <body>
 
+<div class="sakura" style="left:10%;animation-duration:8s;">🌸</div>
+<div class="sakura" style="left:30%;animation-duration:10s;">🌸</div>
+<div class="sakura" style="left:55%;animation-duration:7s;">🌸</div>
+<div class="sakura" style="left:80%;animation-duration:9s;">🌸</div>
+
 <div class="card">
 
 <div class="profile">
-<img src="https://via.placeholder.com/150" alt="รูปโปรไฟล์">
+<img src="nadear.jpg" alt="รูปโปรไฟล์">
 </div>
 
-<h1>Portfolio</h1>
+<h1>👤 ประวัติส่วนตัว</h1>
 
-<div class="nickname">
-💖 ชื่อเล่น : นาเดียร์ 💖
+<table>
+
+<tr>
+<td>ชื่อ-สกุล</td>
+<td>นางสาววณิชญา วงศ์วิริยชาติ</td>
+</tr>
+
+<tr>
+<td>ชื่อเล่น</td>
+<td>นาเดียร์</td>
+</tr>
+
+<tr>
+<td>วันเกิด</td>
+<td>23 ธันวาคม 2551</td>
+</tr>
+
+<tr>
+<td>อายุ</td>
+<td>17 ปี</td>
+</tr>
+
+<tr>
+<td>ศาสนา</td>
+<td>คริสต์</td>
+</tr>
+
+<tr>
+<td>สัญชาติ</td>
+<td>ไทย</td>
+</tr>
+
+<tr>
+<td>งานอดิเรก</td>
+<td>ฟังเพลง • ดูซีรีส์ • ถ่ายรูป</td>
+</tr>
+
+<tr>
+<td>ความสามารถพิเศษ</td>
+<td>ออกแบบเว็บไซต์ HTML และ Canva</td>
+</tr>
+
+<tr>
+<td>คติประจำใจ</td>
+<td>"ความพยายามไม่เคยทรยศคนที่ตั้งใจ"</td>
+</tr>
+
+</table>
+
+<div class="button">
+<a href="education.html">🎓 หน้าถัดไป : ประวัติการศึกษา ➜</a>
 </div>
-
-<div class="info">
-
-<span>ชื่อ-สกุล :</span> นางสาววณิชญา วงศ์วิริยชาติ<br>
-
-<span>อายุ :</span> 17 ปี<br>
-
-<span>วันเกิด :</span> 23 ธันวาคม 2551<br>
-
-<span>ศาสนา :</span> คริสต์
-
-</div>
-
-<a href="personal.html" class="btn">
-✨ ประวัติส่วนตัว ✨
-</a>
-
-<footer>
-Made with ❤ by Nadear
-</footer>
 
 </div>
 
