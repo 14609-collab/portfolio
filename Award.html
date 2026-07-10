@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Nadear</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Sarabun",sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(-45deg,#ffe4ec,#fff6fb,#e8f5ff,#ffeef5);
+    background-size:400% 400%;
+    animation:bg 15s ease infinite;
+    overflow:hidden;
+}
+
+@keyframes bg{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.sakura{
+    position:absolute;
+    top:-50px;
+    font-size:22px;
+    animation:fall linear infinite;
+}
+
+@keyframes fall{
+    from{transform:translateY(-50px) rotate(0deg);}
+    to{transform:translateY(110vh) translateX(120px) rotate(360deg);}
+}
+
+.card{
+    width:900px;
+    max-width:95%;
+    background:rgba(255,255,255,.35);
+    backdrop-filter:blur(18px);
+    border-radius:30px;
+    padding:35px;
+    box-shadow:0 10px 35px rgba(255,182,193,.5);
+}
+
+h1{
+    text-align:center;
+    color:#ff4f8b;
+    margin-bottom:30px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.work{
+    background:rgba(255,255,255,.55);
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(255,182,193,.35);
+}
+
+.work:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(255,94,168,.45);
+}
+
+.work img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.work h3{
+    color:#ff4f8b;
+    margin:15px;
+}
+
+.work p{
+    margin:0 15px 20px;
+    color:#555;
+}
+
+.button{
+    display:flex;
+    justify-content:space-between;
+    margin-top:30px;
+}
+
+.button a{
+    text-decoration:none;
+    background:linear-gradient(45deg,#ff8fc7,#ff5ea8);
+    color:white;
+    padding:14px 28px;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.button a:hover{
+    transform:scale(1.05);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="sakura" style="left:10%;animation-duration:8s;">🌸</div>
+<div class="sakura" style="left:30%;animation-duration:10s;">🌸</div>
+<div class="sakura" style="left:55%;animation-duration:7s;">🌸</div>
+<div class="sakura" style="left:80%;animation-duration:9s;">🌸</div>
+
+<div class="card">
+
+<h1>🖼 Portfolio</h1>
+
+<div class="gallery">
+
+<div class="work">
+<img src="work1.jpg" alt="ผลงาน 1">
+<h3>ผลงานชิ้นที่ 1</h3>
+<p>ใส่รายละเอียดผลงานของคุณ</p>
+</div>
+
+<div class="work">
+<img src="work2.jpg" alt="ผลงาน 2">
+<h3>ผลงานชิ้นที่ 2</h3>
+<p>ใส่รายละเอียดผลงานของคุณ</p>
+</div>
+
+<div class="work">
+<img src="work3.jpg" alt="ผลงาน 3">
+<h3>ผลงานชิ้นที่ 3</h3>
+<p>ใส่รายละเอียดผลงานของคุณ</p>
+</div>
+
+<div class="work">
+<img src="work4.jpg" alt="ผลงาน 4">
+<h3>ผลงานชิ้นที่ 4</h3>
+<p>ใส่รายละเอียดผลงานของคุณ</p>
+</div>
+
+</div>
+
+<div class="button">
+<a href="education.html">⬅ ประวัติการศึกษา</a>
+<a href="contact.html">ติดต่อ ➜</a>
+</div>
+
+</div>
+
+</body>
+</html>
