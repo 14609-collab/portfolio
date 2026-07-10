@@ -1,38 +1,187 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="th">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | วณิชญา วงศ์วิริยชาติ</title>
 
-    <title>ประวัติส่วนตัวจ้า</title>
-    
-<img src="images/IMG_0130.jpeg"width="400">
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Tahoma',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(-45deg,#ffb6e6,#ffcce6,#d9b3ff,#b3d9ff);
+    background-size:400% 400%;
+    animation:bg 12s ease infinite;
+    overflow:hidden;
+}
+
+/* พื้นหลังเคลื่อนไหว */
+@keyframes bg{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* หัวใจลอย */
+body::before,
+body::after{
+    content:"💖";
+    position:absolute;
+    font-size:40px;
+    animation:float 8s linear infinite;
+    opacity:0.5;
+}
+
+body::after{
+    left:80%;
+    animation-delay:3s;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(100vh) rotate(0deg);
+    }
+    to{
+        transform:translateY(-150px) rotate(360deg);
+    }
+}
+
+.card{
+    width:420px;
+    background:rgba(255,255,255,.2);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 0 30px rgba(255,255,255,.5);
+    animation:up 1.2s;
+}
+
+@keyframes up{
+    from{
+        opacity:0;
+        transform:translateY(60px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.profile{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    margin:auto;
+    background:white;
+    border:5px solid #ff66cc;
+    overflow:hidden;
+    box-shadow:0 0 25px #ff66cc;
+}
+
+.profile img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+h1{
+    color:#cc0066;
+    margin-top:20px;
+    font-size:34px;
+}
+
+.nickname{
+    color:#990099;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.info{
+    text-align:left;
+    margin-top:20px;
+    font-size:18px;
+    color:#333;
+    line-height:2;
+}
+
+.info span{
+    color:#d6006f;
+    font-weight:bold;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    text-decoration:none;
+    color:white;
+    background:linear-gradient(45deg,#ff1493,#b300ff);
+    border-radius:40px;
+    font-size:18px;
+    transition:.4s;
+    box-shadow:0 0 20px #ff66cc;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 40px #ff1493;
+}
+
+footer{
+    margin-top:25px;
+    color:#555;
+    font-size:14px;
+}
+
+</style>
 </head>
 
 <body>
 
+<div class="card">
 
+<div class="profile">
+<img src="https://via.placeholder.com/150" alt="รูปโปรไฟล์">
+</div>
 
-<h1>ประวัติส่วนตัว</h1>
+<h1>Portfolio</h1>
 
+<div class="nickname">
+💖 ชื่อเล่น : นาเดียร์ 💖
+</div>
 
+<div class="info">
 
-<p>นางสาววณิชญา วงศ์วิริยชาติ<br>
-ชื่อเล่นนาเดียร์<br>
-วันเกิด 23ธันวาคม 2551<br>
-มีเพื่อน5คน ยูมิโกะ นํ้าปั่น เเก้ม มิ้ว เชียร์ คบกันอยู่เเค่นี้<br>
-อยู่เเก้งสายดก<br>
-ที่อยู่ พระราชวัง ต.หนองจอก อำเภอหนองนัย จ.กรุงเทพมหานคร<br>
-ชอบเล่นสกุชชี่ ชอบตัดคริป ชอบเเต่งหน้า รักเเฟนค่ะ อิย๊าาาาาาาาาาาาาาาาาาาาาาาาาาาา<br>
-สภานักเรียน69 เเอบเหนื่อย ชอบพูดเป็นพิธีกร<br>
-</p>
+<span>ชื่อ-สกุล :</span> นางสาววณิชญา วงศ์วิริยชาติ<br>
 
+<span>อายุ :</span> 17 ปี<br>
 
+<span>วันเกิด :</span> 23 ธันวาคม 2551<br>
 
-<p>โรงเรียนพานทอง</p>
+<span>ศาสนา :</span> คริสต์
 
+</div>
 
+<a href="personal.html" class="btn">
+✨ ประวัติส่วนตัว ✨
+</a>
+
+<footer>
+Made with ❤ by Nadear
+</footer>
+
+</div>
 
 </body>
-
 </html>
